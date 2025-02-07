@@ -9,7 +9,6 @@ function QuizStartButton({
 }) {
     return (
         <PrimaryButton
-            tabIndex={2}
             type={"submit"}
             color={"primary"}
             className={"!w-full !h-[48px] !mt-14"}

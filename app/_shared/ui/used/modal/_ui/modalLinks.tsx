@@ -25,7 +25,6 @@ function ModalLinks() {
         modal.links &&
         modal.links.map((link, index) => (
             <PrimaryLink
-                tabIndex={1}
                 key={index}
                 href={link.href}
                 color={link.color}

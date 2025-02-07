@@ -10,7 +10,6 @@ interface SelectProps {
     label: ReactNode; //
     options: Option[]; // 옵션
     name: string; // 이름
-    tabIndex?: number; // 탭 인덱스
 }
 
 // 옵션 타입
@@ -20,19 +19,11 @@ interface Option {
 }
 
 // 셀렉트 컴포넌트
-function Select({
-    label,
-    options,
-    name,
-    tabIndex = 0,
-}: SelectProps) {
+function Select({ label, options, name }: SelectProps) {
     return (
         <SelectLayout>
             <SelectLabel>{label}</SelectLabel>
-            <SelectContainer
-                tabIndex={tabIndex}
-                name={name}
-            >
+            <SelectContainer name={name}>
                 {options.map((option, index) => (
                     <SelectOption
                         key={index}

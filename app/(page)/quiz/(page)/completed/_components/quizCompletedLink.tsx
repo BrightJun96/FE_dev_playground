@@ -6,7 +6,6 @@ import React from "react";
 function QuizCompletedLink() {
     return (
         <PrimaryLink
-            tabIndex={1}
             className={"h-[48px]"}
             href={`/${PATHS.QUIZ}`}
         >

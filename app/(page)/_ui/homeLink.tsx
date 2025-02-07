@@ -6,7 +6,6 @@ import React from "react";
 function HomeLink() {
     return (
         <PrimaryLink
-            tabIndex={1}
             className={"!w-[130px] !h-[42px]"}
             href={`/${PATHS.QUIZ}`}
         >

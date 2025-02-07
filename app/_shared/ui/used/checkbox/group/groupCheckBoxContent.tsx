@@ -7,7 +7,6 @@ import React from "react";
 
 interface GroupCheckBoxContentProps {
     index: number;
-    tabIndex: number;
     value: GroupCheckBoxOption;
     groupCheckHandler: (
         value: CheckBoxHandlerProps,
@@ -18,7 +17,6 @@ interface GroupCheckBoxContentProps {
 // 그룹 체크박스 컨텐츠
 function GroupCheckBoxContent({
     index,
-    tabIndex,
     value,
     groupCheckHandler,
     checkedList,
@@ -27,7 +25,6 @@ function GroupCheckBoxContent({
         <li className={`flex items-center gap-1`}>
             <span>{index + 1}.</span>
             <Checkbox
-                tabIndex={tabIndex}
                 checked={checkedList.includes(value.value)}
                 label={value.label}
                 value={value.value}

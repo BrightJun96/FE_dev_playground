@@ -5,11 +5,8 @@ import React from "react";
 // 객관식 문제 답안들
 function MultipleChoiceAnswers({
     quizMultipleChoiceContents,
-    tabIndex = 0,
 }: {
     quizMultipleChoiceContents: GetQuizMultipleChoiceSharedDto[];
-
-    tabIndex?: number;
 }) {
     const processedMultipleChoiceContents =
         quizMultipleChoiceContents.map((v) => ({
@@ -19,7 +16,6 @@ function MultipleChoiceAnswers({
 
     return (
         <GroupCheckBox
-            tabIndex={tabIndex}
             options={processedMultipleChoiceContents}
             direction={"col"}
             isMultiSelect={false}

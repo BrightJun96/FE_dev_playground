@@ -11,7 +11,6 @@ function QuizAnswers({
     return (
         <>
             <MultipleChoiceAnswers
-                tabIndex={1}
                 quizMultipleChoiceContents={
                     quizMultipleChoiceContents
                 }

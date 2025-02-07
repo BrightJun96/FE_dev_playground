@@ -8,7 +8,6 @@ function ExplanationLink() {
     const { detailUrl } = useParams();
     return (
         <PrimaryLink
-            tabIndex={2}
             color={"primarySecondary"}
             href={`/${PATHS.QUIZ_EXPLANATION(detailUrl as string)}`}
         >

@@ -10,7 +10,6 @@ function QuizFieldOption() {
                 name={"field"}
                 label={"분야"}
                 options={FIELD_OPTIONS}
-                tabIndex={1}
             />
         </section>
     );

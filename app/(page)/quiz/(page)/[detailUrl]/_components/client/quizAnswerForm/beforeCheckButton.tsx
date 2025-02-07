@@ -11,7 +11,6 @@ function BeforeCheckButton() {
     return (
         <PlaceOnCenter>
             <PrimaryButton
-                tabIndex={2}
                 disabled={ArrayUtils.isEmpty(checkedList)}
                 type={"submit"}
                 color={"primary"}

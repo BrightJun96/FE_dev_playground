@@ -13,7 +13,6 @@ interface IPrimaryButtonProps {
     type?: "button" | "submit" | "reset";
     disabled?: boolean;
     color: "primary" | "primarySecondary";
-    tabIndex?: number;
 }
 
 const PrimaryButton = ({
@@ -22,7 +21,6 @@ const PrimaryButton = ({
     className,
     disabled,
     color,
-    tabIndex = 0,
 }: IPrimaryButtonProps) => {
     const colors = {
         primary:
@@ -32,7 +30,6 @@ const PrimaryButton = ({
     };
     return (
         <button
-            tabIndex={tabIndex}
             className={`${colors[color]} rounded-[8px] px-[16px] text-menu flex justify-center items-center min-w-[84px] h-[32px]  ${className}`}
             onClick={onClick}
             disabled={disabled}

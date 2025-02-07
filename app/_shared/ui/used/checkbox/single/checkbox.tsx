@@ -19,7 +19,6 @@ export interface CheckboxProps {
     value: string | number; // 값
     onChange: (value: CheckBoxHandlerProps) => void; // 체크박스 변경 핸들러
     name?: string; // 이름
-    tabIndex?: number; // 탭 인덱스
 }
 
 // 체크박스 컴포넌트
@@ -29,7 +28,6 @@ function Checkbox({
     value,
     onChange,
     name = "options",
-    tabIndex = 0,
 }: CheckboxProps) {
     return (
         <CheckboxLabel value={value}>
@@ -38,7 +36,6 @@ function Checkbox({
                 value={value}
                 onChange={onChange}
                 name={name}
-                tabIndex={tabIndex}
             />
             <CheckText>{label}</CheckText>
         </CheckboxLabel>

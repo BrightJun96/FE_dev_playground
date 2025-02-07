@@ -10,7 +10,6 @@ function ReturnButton({
 }) {
     return (
         <PrimaryLink
-            tabIndex={1}
             color={"primarySecondary"}
             href={`/${PATHS.QUIZ_DETAIL(returnUrl)}`}
         >

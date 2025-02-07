@@ -16,7 +16,6 @@ interface GroupCheckBoxProps {
     options: GroupCheckBoxOption[]; // 체크박스 그룹 옵션
     className?: string;
     isMultiSelect?: boolean; // 다중 선택 가능 여부
-    tabIndex?: number;
 }
 
 // 체크박스 그룹 컴포넌트
@@ -24,7 +23,6 @@ function GroupCheckBox({
     direction = "col",
     options,
     isMultiSelect = true, // 기본 다중 선택 가능
-    tabIndex = 0,
     className,
 }: GroupCheckBoxProps) {
     const groupCheckHandler =
@@ -41,7 +39,6 @@ function GroupCheckBox({
                 <GroupCheckBoxContent
                     key={i}
                     index={i}
-                    tabIndex={tabIndex}
                     value={v}
                     groupCheckHandler={groupCheckHandler}
                     checkedList={getCheckedList}
