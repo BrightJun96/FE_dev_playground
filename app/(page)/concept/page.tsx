@@ -26,7 +26,9 @@ async function Page({
 
     return (
         <div
-            className={"mt-10 sm:mt-5 flex flex-col gap-3"}
+            className={
+                "pb-5 mt-10 sm:mt-5 flex flex-col gap-3"
+            }
         >
             <ListSearchFilter searchParams={sp} />
             <hr />
