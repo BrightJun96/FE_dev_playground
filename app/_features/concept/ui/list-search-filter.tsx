@@ -35,6 +35,21 @@ function ListSearchFilter({
             text: "Back-End",
             value: Field.BackEnd,
         },
+        {
+            color: "default",
+            text: "Back-End",
+            value: Field.Database,
+        },
+        {
+            color: "warning",
+            text: "Back-End",
+            value: Field.DevOps,
+        },
+        {
+            color: "danger",
+            text: "Computer-Science",
+            value: Field.ComputerScience,
+        },
     ];
 
     const Techs: IChip[] = [
@@ -62,6 +77,26 @@ function ListSearchFilter({
             color: "danger",
             text: "Nest.js",
             value: Tech.NestJs,
+        },
+        {
+            color: "success",
+            text: "Docker",
+            value: Tech.Docker,
+        },
+        {
+            color: "warning",
+            text: "AWS",
+            value: Tech.Aws,
+        },
+        {
+            color: "secondary",
+            text: "Mongoose",
+            value: Tech.Mongoose,
+        },
+        {
+            color: "danger",
+            text: "PostgreSQL",
+            value: Tech.PostgreSQL,
         },
     ];
 
