@@ -37,12 +37,12 @@ function ListSearchFilter({
         },
         {
             color: "default",
-            text: "Back-End",
+            text: "Database",
             value: Field.Database,
         },
         {
             color: "warning",
-            text: "Back-End",
+            text: "DevOps",
             value: Field.DevOps,
         },
         {
@@ -119,7 +119,7 @@ function ListSearchFilter({
     return (
         <div className={"flex flex-col gap-2"}>
             {/* 분야*/}
-            <section className={"flex gap-2"}>
+            <section className={"flex gap-2 flex-wrap"}>
                 <Link href={`/concept`}>
                     <Chip
                         color={"default"}
