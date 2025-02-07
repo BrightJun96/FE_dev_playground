@@ -1,4 +1,4 @@
-import Header from "@/app/_shared/layout/header/header";
+import BottomNavigation from "@/app/_shared/layout/bottom-navigation/bottom-navigation";
 import MainContainer from "@/app/_shared/layout/mainContainer";
 import NextUIProvider from "@/app/_shared/provider/nextUIProvider";
 import ModalProvider from "@/app/_shared/ui/used/modal/_provider/modalProvider";
@@ -53,12 +53,14 @@ export default function RootLayout({
                 >
                     <NextUIProvider>
                         {/*헤더*/}
-                        <Header />
+                        {/*<Header />*/}
                         <MainContainer>
                             <ModalProvider>
                                 {children}
                             </ModalProvider>
                         </MainContainer>
+                        {/* 바텀 네비게이션*/}
+                        <BottomNavigation />
                     </NextUIProvider>
                 </body>
             </html>

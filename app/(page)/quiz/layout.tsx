@@ -12,7 +12,7 @@ const QuizLayout = ({
         <QuizStorageProvider>
             <QuizHelperProvider>
                 <InnerContainer
-                    className={"!justify-start mt-10"}
+                    className={"!justify-start"}
                 >
                     {children}
                 </InnerContainer>

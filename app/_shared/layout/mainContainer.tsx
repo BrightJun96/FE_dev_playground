@@ -17,7 +17,7 @@ function MainContainer({
         "portfolio";
 
     const generalCaseCls =
-        "w-full lg:min-h-[calc(100vh-80px)] md:min-h-[calc(100vh-60px)] sm:min-h-[calc(100vh-60px)] lg:flex lg:justify-center md:flex md:justify-center sm:px-[10px]";
+        "w-full min-h-[100vh]  lg:flex lg:justify-center md:flex md:justify-center mb-[65px] sm:px-[10px] pt-10 sm:pt-5";
 
     const portfolioPathCaseCls =
         "w-full lg:h-[100vh] md:h-[100vh] sm:h-[100vh] lg:flex lg:justify-center lg:items-center md:flex md:justify-center md:items-center sm:px-[10px]";
@@ -25,7 +25,14 @@ function MainContainer({
     const processCls = !portfolioPath
         ? generalCaseCls
         : portfolioPathCaseCls;
-    return <main className={processCls}>{children}</main>;
+    return (
+        <main
+            // className={""}
+            className={processCls}
+        >
+            {children}
+        </main>
+    );
 }
 
 export default MainContainer;

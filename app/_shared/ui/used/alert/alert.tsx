@@ -15,7 +15,7 @@ function Alert({ color = "success", title = "" }: IAlert) {
     return (
         <div
             className={
-                "fixed w-full left-0 bottom-14 lg:px-[400px] md:px-[200px] sm:px-[10px]"
+                "fixed w-full left-0 bottom-20 lg:px-[400px] md:px-[200px] sm:px-[10px]"
             }
         >
             <NextUiAlert
