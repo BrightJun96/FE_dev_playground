@@ -17,7 +17,7 @@ function MainContainer({
         "portfolio";
 
     const generalCaseCls =
-        "w-full min-h-[100vh]  lg:flex lg:justify-center md:flex md:justify-center mb-[65px] sm:px-[10px] pt-10 sm:pt-5";
+        "w-full min-h-[100vh] lg:flex lg:justify-center md:flex md:justify-center mb-[65px] sm:px-[10px] pt-10 sm:pt-5";
 
     const portfolioPathCaseCls =
         "w-full lg:h-[100vh] md:h-[100vh] sm:h-[100vh] lg:flex lg:justify-center lg:items-center md:flex md:justify-center md:items-center sm:px-[10px]";

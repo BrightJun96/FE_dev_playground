@@ -34,7 +34,6 @@ function Navigation() {
         },
     ];
 
-    console.log("pathname :", pathname.substring(1));
     return (
         <nav className={"w-full pt-2"}>
             <ul
