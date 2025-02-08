@@ -8,7 +8,9 @@ export class RoadmapApi extends BaseApi {
     constructor() {
         super(API_ENDPOINT);
     }
-    async fetchRoadmap() {
+    async fetchRoadmap(): Promise<
+        IResponse<GetRoadmapResponse[]>
+    > {
         return this.request(API_PATHS.ROADMAP.LIST, {
             method: "GET",
         });

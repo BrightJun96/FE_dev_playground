@@ -4,7 +4,9 @@ import { IResponse } from "@/app/_shared/api/api.types";
 import { API_PATHS } from "@/app/_shared/constants/api.path.const";
 
 export class RoadmapApiFeature extends RoadmapApi {
-    async fetchRoadmap() {
+    async fetchRoadmap(): Promise<
+        IResponse<GetRoadmapResponse[]>
+    > {
         return this.request(API_PATHS.ROADMAP.LIST, {
             method: "GET",
         });

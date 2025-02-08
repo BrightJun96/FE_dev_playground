@@ -1,12 +1,9 @@
 import { conceptApi } from "@/app/_features/concept/api";
 import ConceptCardItem from "@/app/_features/concept/ui/concept-card-item";
 import ListSearchFilter from "@/app/_features/concept/ui/list-search-filter";
+import { SearchParams } from "@/app/_shared/types/search-params.type";
 import { Link } from "next-view-transitions";
 import React from "react";
-
-export type SearchParams = Promise<{
-    [key: string]: string | string[] | undefined;
-}>;
 
 export async function generateMetadata() {
     return {
